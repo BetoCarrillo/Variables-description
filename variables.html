@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+</body>
+<script>
+
+// Variables are storage loc
+    // DIFFERENCES:
+
+    // VAR
+    // SCOPE. Where variables are available for use.
+    // VAR: Global when declared outside function and scoped when declared within a function.
+
+    // var tester = "hey hi";
+    // function newFunction() {
+    //     var hello = "hello";
+    // }
+    // console.log(hello);
+    // console.log(tester);
+
+    // error: hello is not defined
+
+    // USE.
+    // Can be re-declared and updated.
+
+    // var greeter = "hey hi";
+    // var greeter = "say Hello instead";
+    // console.log(greeter)
+
+    // HOISTING. JS mechenism where variables and function declarations are moved to the top of their scope before code execution.
+    // Hoisted to the top of their scope and initialized as undefined
+
+    // console.log(greeter);
+    // var greeter = "say hello"
+
+
+
+
+    // LET
+    // SCOPE. let is block scoped. Anything in {curly braces} is a block
+
+    // let greeting = "say Hi";
+    // let times = 4;
+    // if (times > 3) {
+    //     let hello = "say Hello instead";
+    //     console.log(hello); // "say Hello instead"
+    // }
+    // console.log(hello) // hello is not defined
+
+
+    // USE. Let can be updated but not re-declared.
+
+    // let greeting = "say Hi";
+    // greeting = "say Hello instead";
+
+    // let greeting = "say Hello instead"; // error: Identifier 'greeting' has already been declared.However, if the same variable is defined in different scopes, there will be no error
+
+    // console.log(greeting)
+
+
+    // HOISTING. Hoisted to the top of their scope BUT not initialized meaning result will be a reference error not "undefined"
+
+
+    // CONST
+    // SCOPE. Blocked scoped.
+
+    // USE. Cannot be updated or redeclared.
+    // const greeting = "say Hi";
+    // greeting = "say Hello instead";// error: Assignment to constant variable.
+    // console.log(greeting)
+
+    // const greeting = "say Hi";
+    // const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared
+    // console.log(greeting)
+
+    // HOISTING. Hoisted to the top but not initialized.
+       //    Every const declaration must be initialized at the time of declaration. However, in objects declared with const, the properties can be updated. Example:
+
+    // const greeting = {
+    //     message: "say Hi",
+    //     times: 4
+    // }
+    // greeting.message = "say Hello instead";
+
+    // console.log(greeting)
+
+
+
+
+
+</script>
+
+</html>
